@@ -63,12 +63,99 @@
     <a href="https://www.apple.com/my/?afid=p238%7Csn8w23oO8-dc_mtid_18707vxu38484_pcrid_545758675647_pgrid_15791902839_&cid=aos-my-kwgo-brand--slid---product--" target="_blank"><img src="https://sc04.alicdn.com/kf/UTB8ou8hOyDEXKJk43Oqq6Az3XXaz.jpg" alt="epal" style="width:500px; height:500px;"></a>
     <br>
     <button onclick="document.location='https://www.youtube.com/'">youtube</button>
+    <br>
+    <table style="width: 100%;">
+
+        <caption style="font-size: 80px;">Names</caption>
+
+        <tr>
+            <th colspan="2"> Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Danish</td>
+            <td>Irfan</td>
+            <td rowspan="2">05</td>
+        </tr>
+        <tr>
+            <td>Haikal</td>
+            <td>Aiman</td>
+
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div class="percubaan">
+        <h2>HTML Iframes</h2>
+        <p>You can use the height and width attributes to specify the size of the iframe:</p>
+        <iframe src="http://www.upnm.edu.my/images/logo/logo.png" style="border: none;" title="Iframe Example"></iframe>
+        <br>
+        <iframe src="http://www.upnm.edu.my/images/logo/logo.png" name="babu" height="300px" width="100%" title="Iframe Example"></iframe>
+        <p style="text-align: center;"><a href="https://www.youtube.com/" target="babu">link ke youtube</a></p>
+
+    </div>
+    <br>
+    <div class="baru">
+        <h2>waktu</h2>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+        <p id="demo"></p>
+    </div>
+    <br>
+    <div class="seterus">
+        <h2>Use JavaScript to Change Text</h2>
+        <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+        <p id="demo2"></p>
+    </div>
+    <br>
+    <div class="ketiga">
+        <h1>My First JavaScript</h1>
+
+        <p>JavaScript can change the content of an HTML element:</p>
+
+        <button type="button" onclick="myFunction()">Click Me!</button>
+
+        <p id="demo3" style="text-align: center;">This is a demonstration.</p>
+
+    </div>
+
+
+
 
 
 
 
 
 </body>
+<script>
+    document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+
+    function myFunction() {
+        document.getElementById("demo3").innerHTML = "Hello Everybody";
+    }
+</script>
 
 <style>
     h4 {
@@ -90,6 +177,42 @@
     
     button {
         margin-left: 700px;
+    }
+    
+    table,
+    th,
+    td {
+        border: rosybrown 4px solid;
+    }
+    
+    th {
+        background-color: darkmagenta;
+    }
+    
+    td {
+        background-color: skyblue;
+        text-align: center;
+    }
+    
+    tr {
+        height: 50px;
+    }
+    
+    .percubaan {
+        background-color: yellowgreen;
+    }
+    
+    .baru {
+        background-color: wheat;
+        text-align: center;
+    }
+    
+    .seterus {
+        background-color: sienna;
+    }
+    
+    .ketiga {
+        background-color: teal;
     }
 </style>
 
