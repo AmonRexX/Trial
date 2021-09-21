@@ -3,19 +3,9 @@
 
 <head>
     <title>Bersama Acer</title>
-    <style>
-        h1 {
-            color: darkmagenta;
-            border: solid 5px lightsalmon;
-            text-align: center;
-        }
-        
-        body {
-            background-image: url('https://www.tsemrinpoche.com/wp-content/uploads/2017/02/Feat2.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -140,6 +130,17 @@
         <p id="demo3" style="text-align: center;">This is a demonstration.</p>
 
     </div>
+    <br>
+    <div class="sunset" style="background-color: cornsilk;">
+        <p>path in same folder</p>
+        <img src="Anatomy_of_a_Sunset-2.jpg" style="margin-left: 70%;" alt="matahari">
+        <br>
+        <p>path in outside folder in same root</p>
+        <img src="/image/sunset-quotes-21-1586531574.jpg" style="margin-left: 40%;" alt="matahari">
+        <br>
+        <p>path in outside folder with another level</p>
+        <img src="/image/Gambar-Bulan.jpg" alt="matahari">
+    </div>
 
 
 
@@ -213,6 +214,16 @@
     
     .ketiga {
         background-color: teal;
+    }
+    
+    .sunset p {
+        font-size: xx-large;
+        text-align: center;
+    }
+    
+    .sunset img {
+        height: 180px;
+        width: 360px;
     }
 </style>
 
